@@ -1,0 +1,35 @@
+/* wrap pre tag content */
+pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+/* furigana links no action on hover */
+a[t]:hover, a[t]:active, a[t]:visited {
+  	text-decoration: none;
+}
+/* emoji */
+img.emoji {
+	height: 1em;
+	width: 1em;
+	margin: 0 .05em 0 .1em;
+	vertical-align: -0.1em;
+	/* 
+	This is to make the emojis feel like actual emojis to 
+	the user and they won't act like images. This makes the emojis
+	non-reactive to any mouse events such as dragging, 
+	hovering, clicking etc. Makes it feel like its actual text.
+	*/
+	pointer-events: none; }
+/* auto-scroll tables */
+	.scroll {
+	height: 200px;
+	overflow-y: scroll;
+}
+/* nav */
+#fixednav {
+	background: rgba(0,255,255,0.5);
+}
